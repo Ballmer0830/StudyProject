@@ -7,9 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="01jvm" />
+        <module name="00tool" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="00tool" target="1.8" />
       <module name="01jvm" target="8" />
     </bytecodeTargetLevel>
   </component>
