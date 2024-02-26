@@ -100,7 +100,7 @@ public class ExcelUtils {
     public  static void parseExcel(String excelPath){
         ExcelReader reader = ExcelUtil.getReader(excelPath);
         List<Map<String, Object>> list = reader.readAll();
-        Map<String,String> codeAndIds = new HashMap<>();
+        Map<String,String> codeAndIds = new HashMap();
         for (Map<String, Object> map : list) {
             String versionCode = (String) map.get("version_code");
             String versionId = (String) map.get("versionId");
